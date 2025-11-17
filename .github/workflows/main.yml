@@ -18,7 +18,7 @@ jobs:
             - uses: actions/checkout@v3
             - name: Mirror the gitee organization repos to Github.
               run: |
-                git clone -b release https://github.com/mytv-android/myMIGU.git
+                git clone  https://github.com/mytv-android/myMIGU.git
                 cp  myMIGU/* .
                 rm -rf myMIGU
                 mv migu_github.m3u migu.m3u
